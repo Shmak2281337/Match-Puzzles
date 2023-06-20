@@ -1,0 +1,2969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>771</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Спичечные головоломки</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 115, 46);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_game">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <widget class="QPushButton" name="button_back">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+           </property>
+           <property name="text">
+            <string>Назад</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_answer">
+           <property name="geometry">
+            <rect>
+             <x>720</x>
+             <y>20</y>
+             <width>111</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+           </property>
+           <property name="text">
+            <string>Ответ</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_task">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>20</y>
+             <width>511</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(250, 250, 250);</string>
+           </property>
+           <property name="text">
+            <string>Текст задания</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_00">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>130</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_01">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>130</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_02">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>130</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_03">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>130</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_00">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>140</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_01">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>140</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_02">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>140</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_03">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>140</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_04">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>140</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_10">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>230</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_11">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>230</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_12">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>230</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_13">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>230</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_20">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>330</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_21">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>330</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_22">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>330</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_23">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>330</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_30">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>430</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_31">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>430</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_32">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>430</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_33">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>430</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_40">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>530</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_41">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>530</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_42">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>530</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_43">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>530</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_50">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>630</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_51">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>630</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_52">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>630</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="horizontal_53">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>630</y>
+             <width>90</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.767, y1:0, x2:0.886273, y2:0, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_10">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>240</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_11">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>240</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_12">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>240</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_13">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>240</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_14">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>240</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_20">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>340</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_21">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>340</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_22">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>340</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_23">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>340</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_24">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>340</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_30">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>440</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_31">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>440</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_32">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>440</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_33">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>440</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_34">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>440</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_40">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>540</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_41">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>540</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_42">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>540</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_43">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>540</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="vertical_44">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>540</y>
+             <width>13</width>
+             <height>90</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: qlineargradient(spread:pad, x1:0.875, y1:0.296, x2:0.874701, y2:0.131, stop:0.823864 rgba(239, 204, 87, 255), stop:0.869318 rgba(132, 66, 0, 255));</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h00">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>124</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h01">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>124</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h02">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>124</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h03">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>124</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h10">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>225</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h11">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>225</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h12">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>225</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h13">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>225</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h20">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>324</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h21">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>324</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h22">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>324</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h23">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>324</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h30">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>424</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h31">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>424</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h32">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>424</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h33">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>424</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h40">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>524</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h41">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>524</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h42">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>524</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h43">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>524</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h50">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>624</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h51">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>624</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h52">
+           <property name="geometry">
+            <rect>
+             <x>404</x>
+             <y>624</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_h53">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>624</y>
+             <width>85</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v00">
+           <property name="geometry">
+            <rect>
+             <x>184</x>
+             <y>149</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v01">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>149</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v02">
+           <property name="geometry">
+            <rect>
+             <x>384</x>
+             <y>149</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v03">
+           <property name="geometry">
+            <rect>
+             <x>484</x>
+             <y>149</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v04">
+           <property name="geometry">
+            <rect>
+             <x>584</x>
+             <y>149</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v10">
+           <property name="geometry">
+            <rect>
+             <x>184</x>
+             <y>249</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v11">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>249</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v12">
+           <property name="geometry">
+            <rect>
+             <x>384</x>
+             <y>249</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v13">
+           <property name="geometry">
+            <rect>
+             <x>484</x>
+             <y>249</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v14">
+           <property name="geometry">
+            <rect>
+             <x>584</x>
+             <y>249</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v20">
+           <property name="geometry">
+            <rect>
+             <x>184</x>
+             <y>349</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v21">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>349</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v22">
+           <property name="geometry">
+            <rect>
+             <x>384</x>
+             <y>349</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v23">
+           <property name="geometry">
+            <rect>
+             <x>484</x>
+             <y>349</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v24">
+           <property name="geometry">
+            <rect>
+             <x>584</x>
+             <y>349</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v30">
+           <property name="geometry">
+            <rect>
+             <x>184</x>
+             <y>449</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v31">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>449</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v32">
+           <property name="geometry">
+            <rect>
+             <x>384</x>
+             <y>449</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v33">
+           <property name="geometry">
+            <rect>
+             <x>484</x>
+             <y>449</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v34">
+           <property name="geometry">
+            <rect>
+             <x>584</x>
+             <y>449</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v40">
+           <property name="geometry">
+            <rect>
+             <x>184</x>
+             <y>549</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v41">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>549</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v42">
+           <property name="geometry">
+            <rect>
+             <x>384</x>
+             <y>549</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v43">
+           <property name="geometry">
+            <rect>
+             <x>484</x>
+             <y>549</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_v44">
+           <property name="geometry">
+            <rect>
+             <x>584</x>
+             <y>549</y>
+             <width>24</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_moves">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>680</y>
+             <width>381</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(250, 250, 250);</string>
+           </property>
+           <property name="text">
+            <string>Ходов сделано:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="button_reset">
+           <property name="geometry">
+            <rect>
+             <x>720</x>
+             <y>90</y>
+             <width>111</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+           </property>
+           <property name="text">
+            <string>Сброс</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_rules">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_rules">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>800</width>
+            <height>450</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(250, 250, 250);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На экране расположены спички. Для победы нужно убрать&lt;/p&gt;&lt;p&gt;или переложить (в зависимости от уровня ) определенное&lt;/p&gt;&lt;p&gt;количество спичек (т. е. выполнить количество ходов) так,&lt;/p&gt;&lt;p&gt;чтобы составить квадраты. В задании указано, какое количество&lt;/p&gt;&lt;p&gt;квадратов необходимо получить. Если требуется, чтобы&lt;/p&gt;&lt;p&gt;квадраты были равными, то подсчитываться будут только&lt;/p&gt;&lt;p&gt;квадраты равных размеров.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>75</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>26</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Правила игры</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="back_rules">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>5</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+           </property>
+           <property name="text">
+            <string>Назад</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_menu">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="2" rowspan="2" colspan="2">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="button_play">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>Уровни</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_rules">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>Правила</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_exit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>Выход</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="4">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="2">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_levels">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="8" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="1">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="button_level_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="button_level_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QPushButton" name="button_level_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="button_level_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="button_level_15">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>15</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QPushButton" name="button_level_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>12</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="button_level_13">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>13</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="button_level_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="button_level_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="button_level_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>11</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="button_level_16">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>16</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="button_level_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QPushButton" name="button_level_17">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>17</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="button_level_1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QPushButton" name="button_level_18">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>18</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="button_level_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="button_level_14">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>14</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="button_level_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>28</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 6 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 6 solid rgb(230, 230, 230);
+}</string>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="7" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="2">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>75</height>
+           </size>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>322</width>
+             <height>75</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>75</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>26</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Уровни</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="back_levels">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>8</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius: 20;
+color: rgb(250, 250, 250);
+border: 3 solid rgb(250, 250, 250);
+}
+QPushButton:pressed{
+color: rgb(230, 230, 230);
+border: 3 solid rgb(230, 230, 230);
+}</string>
+           </property>
+           <property name="text">
+            <string>Назад</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
